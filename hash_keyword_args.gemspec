@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["ronen@barzel.org"]
   gem.description   = %q{Makes it easier and more robust to use a hash for keyword args to a method. In particular, performs argument checking and default values.}
   gem.summary       = %q{Helper for using a hash for keyword args to a method. Performs argument checking, provides accessor methods for values, supports default values, required arguments, and argument value validation.}
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/ronen/hash_keyword_args"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
