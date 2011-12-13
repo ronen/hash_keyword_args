@@ -140,9 +140,12 @@ which will perform validity checking on element of the array.  You can combine :
 
     args = args.keyword_args(:winners => { :enumerable => true, :default => ["Huey", "Dewey"] }
 
-=== Can I have my keywords & values in a Hash?
+=== But I like having my options in a Hash!
 
-The returned object is actually a +Hash+ with the accessors defined in its singleton class, so you use hash operations on it if needed, and you can pass it in turn to another method.  For example:
+Not to worry.  The returned object is actually a +Hash+ with the accessors
+defined in its singleton class, so you can use hash operations on it if
+needed. In particular you can pass it in turn to another method.  For
+example:
 
   def my_wrapper(args={})
     args = args.keyword_args(:name, :rank, :serial_number)
@@ -152,7 +155,8 @@ The returned object is actually a +Hash+ with the accessors defined in its singl
 
 === Suppress Argument Checking
 
-If you want to suppress argument checking you can specify the magic keyword :OTHERS, e.g.:
+If you want to suppress argument checking you can specify the magic keyword
++:OTHERS+ (with the intended meaning "and other keyword args that aren't listed here"):
 
   def execute(operator, opts={})
     opts = opts.keyword_args(:immediately, :OTHERS)
@@ -164,14 +168,17 @@ If you want to suppress argument checking you can specify the magic keyword :OTH
 
   execute(operator, :yabba => 1, :dabba => 2, :doo => 3)  # not an argument error
 
-No accessor methods are defined for undeclared keywords, but the values will be available in the hash.  The properties to :OTHERS are ignored, but if you want to make it look nice in at the end of list it's suggested that you use +:OTHERS => :optional:
+No accessor methods are defined for undeclared keywords, but the values
+will be available in the hash.  The properties to +:OTHERS+ are ignored, but
+you can use <tt>:OTHERS => :optional</tt> to make it look nice at the end of a
+list.
       
   args = args.keyword_args(:name => String,
                            :OTHERS => :optional)
 
 == Summary
 
-=== Complete list of long form properties that can be specified
+=== Complete list of long form properties that can be specified, individually or in combination:
 
     :key => { :required => boolean }
     :key => { :default => "your default value" }
