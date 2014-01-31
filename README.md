@@ -248,3 +248,7 @@ Future: I hope that this gem will be obviated in future versions of ruby.
 
 Released under the MIT License.  See LICENSE for details.
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ronen/hash_keyword_args/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
