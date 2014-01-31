@@ -1,5 +1,9 @@
 # hash_keyword_args
 
+[![Gem Version](https://badge.fury.io/rb/hash_keyword_args.png)](http://badge.fury.io/rb/hash_keyword_args)
+[![Build Status](https://secure.travis-ci.org/ronen/hash_keyword_args.png)](http://travis-ci.org/ronen/hash_keyword_args)
+[![Dependency Status](https://gemnasium.com/ronen/hash_keyword_args.png)](https://gemnasium.com/ronen/hash_keyword_args)
+
 Defines Hash#keyword_args, which provides convenient features when using a
 Hash to provide keyword args to a method:
 
