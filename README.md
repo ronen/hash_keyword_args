@@ -225,13 +225,12 @@ or in your Gemfile:
 
 ## Versions
 
-Has been tested on MRI 1.8.7 and MRI 1.9.3
+Tested on MRI 1.8.7, 1.9.3, and 2.0.0
 
 ## History
 
 Past: I've been using this for years and carrying it around from project to
-project.  Finally got around to bundling it into a gem and putting it on
-rubygems, since that's now so darn easy to do!  Maybe somebody other than me
+project.  Finally got around to bundling it into a gem.  Maybe somebody other than me
 will find this gem useful too.
 
 Future: I hope that this gem will be obviated in future versions of ruby.
